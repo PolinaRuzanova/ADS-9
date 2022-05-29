@@ -18,8 +18,7 @@ BST<std::string> makeTree(const char* filename) {
         char sym = file.get();
         if ((sym >= 'a' && sym <= 'z') || (sym >= 'A' && sym <= 'Z')) {
             slovo += tolower(sym);
-        }
-        else if (slovo != "") {
+        } else if (slovo != "") {
             derevo.add(slovo);
             slovo = "";
         }
